@@ -52,19 +52,12 @@ public class ComercioIT {
     /**
      * Se encarga de inicializar los contenedores para realizar las pruebas
      */
-    @BeforeAll
-    public static void lanzarPayaraTest() {
-        System.out.println("Comercio - lanzarPayara");
-        // agregue su logica de arrancar los contenedores que usara. Note que las propiedades no
-        // estan agregadas a la clase, debera crearlas.
-
-    }
-    Network red = Network.newNetwork();
-    MountableFile war = MountableFile.forHostPath(
+    static Network red = Network.newNetwork();
+    static MountableFile war = MountableFile.forHostPath(
             Paths.get("target/Delivery.war").toAbsolutePath(), 0777);
 
     @Container
-    GenericContainer postgres = new PostgreSQLContainer("postgres:latest")
+    static GenericContainer postgres = new PostgreSQLContainer("postgres:13-alpine")
             .withDatabaseName("deliveryapp")
             .withPassword("abc123")
             .withUsername("postgres")
@@ -73,16 +66,30 @@ public class ComercioIT {
             .withNetworkAliases("db");
     
     @Container
-    GenericContainer payara = new GenericContainer("payara/server-full:latest")
+    static GenericContainer payara = new GenericContainer("payara/server-full:6.2023.1")
             .withEnv("POSTGRES_USER","postgres")
             .withEnv("POSTGRES_PASSWORD","abc123")
             .withEnv("POSTGRES_PORT","5432")
             .withEnv("POSTGRES_DBNAME","deliveryapp")
             .dependsOn(postgres)
             .withNetwork(red)
-            .withCopyFileToContainer(war,"/opt/payara/aplicacion.war")
-            .waitingFor(Wait.forLogMessage("deploy AdminCommandApplication deployed", 1))
+            .withCopyFileToContainer(war,"/opt/payara/deployments/aplicacion.war")
+            .waitingFor(Wait.forLogMessage(".*aplicacion was successfully deployed.*",1))
             .withExposedPorts(8080);
+    
+    
+    @BeforeAll
+    public static void lanzarPayaraTest() {
+        System.out.println("Comercio - lanzarPayara");
+   
+        
+        // agregue su logica de arrancar los contenedores que usara. Note que las propiedades no
+        // estan agregadas a la clase, debera crearlas.
+
+    }
+    
+    
+            
     
     
 
