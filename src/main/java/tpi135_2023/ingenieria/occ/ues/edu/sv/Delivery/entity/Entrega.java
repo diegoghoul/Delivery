@@ -5,26 +5,14 @@
 package tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.entity;
 
 import java.io.Serializable;
-import java.util.Collection;
 import java.util.Date;
-import jakarta.persistence.Basic;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.NamedQueries;
-import jakarta.persistence.NamedQuery;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
+import java.util.List;
+
+import jakarta.persistence.*;
 
 /**
  *
- * @author Usuario
+ * @author figueroa
  */
 @Entity
 @Table(name = "entrega")
@@ -47,7 +35,7 @@ public class Entrega implements Serializable {
     @Column(name = "observaciones")
     private String observaciones;
     @OneToMany(mappedBy = "idEntrega")
-    private Collection<EntregaHistorial> entregaHistorialCollection;
+    private List<EntregaHistorial> entregaHistorialList;
     @JoinColumn(name = "id_orden", referencedColumnName = "id_orden")
     @ManyToOne
     private Orden idOrden;
@@ -89,12 +77,12 @@ public class Entrega implements Serializable {
         this.observaciones = observaciones;
     }
 
-    public Collection<EntregaHistorial> getEntregaHistorialCollection() {
-        return entregaHistorialCollection;
+    public List<EntregaHistorial> getEntregaHistorialList() {
+        return entregaHistorialList;
     }
 
-    public void setEntregaHistorialCollection(Collection<EntregaHistorial> entregaHistorialCollection) {
-        this.entregaHistorialCollection = entregaHistorialCollection;
+    public void setEntregaHistorialList(List<EntregaHistorial> entregaHistorialList) {
+        this.entregaHistorialList = entregaHistorialList;
     }
 
     public Orden getIdOrden() {

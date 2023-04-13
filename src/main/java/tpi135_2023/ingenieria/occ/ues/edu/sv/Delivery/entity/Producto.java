@@ -5,22 +5,13 @@
 package tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.entity;
 
 import java.io.Serializable;
-import java.util.Collection;
-import jakarta.persistence.Basic;
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.NamedQueries;
-import jakarta.persistence.NamedQuery;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+import java.util.List;
+
+import jakarta.persistence.*;
 
 /**
  *
- * @author Usuario
+ * @author figueroa
  */
 @Entity
 @Table(name = "producto")
@@ -45,9 +36,9 @@ public class Producto implements Serializable {
     @Column(name = "descripcion")
     private String descripcion;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "producto")
-    private Collection<ProductoComercio> productoComercioCollection;
+    private List<ProductoComercio> productoComercioList;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "producto")
-    private Collection<ProductoTipoProducto> productoTipoProductoCollection;
+    private List<ProductoTipoProducto> productoTipoProductoList;
 
     public Producto() {
     }
@@ -88,20 +79,20 @@ public class Producto implements Serializable {
         this.descripcion = descripcion;
     }
 
-    public Collection<ProductoComercio> getProductoComercioCollection() {
-        return productoComercioCollection;
+    public List<ProductoComercio> getProductoComercioList() {
+        return productoComercioList;
     }
 
-    public void setProductoComercioCollection(Collection<ProductoComercio> productoComercioCollection) {
-        this.productoComercioCollection = productoComercioCollection;
+    public void setProductoComercioList(List<ProductoComercio> productoComercioList) {
+        this.productoComercioList = productoComercioList;
     }
 
-    public Collection<ProductoTipoProducto> getProductoTipoProductoCollection() {
-        return productoTipoProductoCollection;
+    public List<ProductoTipoProducto> getProductoTipoProductoList() {
+        return productoTipoProductoList;
     }
 
-    public void setProductoTipoProductoCollection(Collection<ProductoTipoProducto> productoTipoProductoCollection) {
-        this.productoTipoProductoCollection = productoTipoProductoCollection;
+    public void setProductoTipoProductoList(List<ProductoTipoProducto> productoTipoProductoList) {
+        this.productoTipoProductoList = productoTipoProductoList;
     }
 
     @Override

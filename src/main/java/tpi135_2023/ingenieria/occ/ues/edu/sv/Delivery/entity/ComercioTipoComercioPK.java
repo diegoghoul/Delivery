@@ -5,13 +5,12 @@
 package tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.entity;
 
 import java.io.Serializable;
-import jakarta.persistence.Basic;
-import jakarta.persistence.Column;
-import jakarta.persistence.Embeddable;
+
+import jakarta.persistence.*;
 
 /**
  *
- * @author Usuario
+ * @author figueroa
  */
 @Embeddable
 public class ComercioTipoComercioPK implements Serializable {

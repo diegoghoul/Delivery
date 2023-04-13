@@ -5,24 +5,14 @@
 package tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.entity;
 
 import java.io.Serializable;
-import java.util.Collection;
 import java.util.Date;
-import jakarta.persistence.Basic;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.NamedQueries;
-import jakarta.persistence.NamedQuery;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
+import java.util.List;
+
+import jakarta.persistence.*;
 
 /**
  *
- * @author Usuario
+ * @author figueroa
  */
 @Entity
 @Table(name = "factura")
@@ -47,7 +37,7 @@ public class Factura implements Serializable {
     @Column(name = "observaciones")
     private String observaciones;
     @OneToMany(mappedBy = "numeroFactura")
-    private Collection<Pago> pagoCollection;
+    private List<Pago> pagoList;
     @JoinColumn(name = "id_orden", referencedColumnName = "id_orden")
     @ManyToOne
     private Orden idOrden;
@@ -91,12 +81,12 @@ public class Factura implements Serializable {
         this.observaciones = observaciones;
     }
 
-    public Collection<Pago> getPagoCollection() {
-        return pagoCollection;
+    public List<Pago> getPagoList() {
+        return pagoList;
     }
 
-    public void setPagoCollection(Collection<Pago> pagoCollection) {
-        this.pagoCollection = pagoCollection;
+    public void setPagoList(List<Pago> pagoList) {
+        this.pagoList = pagoList;
     }
 
     public Orden getIdOrden() {

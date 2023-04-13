@@ -6,20 +6,12 @@ package tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.entity;
 
 import java.io.Serializable;
 import java.util.Date;
-import jakarta.persistence.Column;
-import jakarta.persistence.EmbeddedId;
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.NamedQueries;
-import jakarta.persistence.NamedQuery;
-import jakarta.persistence.Table;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
+
+import jakarta.persistence.*;
 
 /**
  *
- * @author Usuario
+ * @author figueroa
  */
 @Entity
 @Table(name = "comercio_tipo_comercio")
@@ -28,7 +20,8 @@ import jakarta.persistence.TemporalType;
     @NamedQuery(name = "ComercioTipoComercio.findByIdComercio", query = "SELECT c FROM ComercioTipoComercio c WHERE c.comercioTipoComercioPK.idComercio = :idComercio"),
     @NamedQuery(name = "ComercioTipoComercio.findByIdTipoComercio", query = "SELECT c FROM ComercioTipoComercio c WHERE c.comercioTipoComercioPK.idTipoComercio = :idTipoComercio"),
     @NamedQuery(name = "ComercioTipoComercio.findByActivo", query = "SELECT c FROM ComercioTipoComercio c WHERE c.activo = :activo"),
-    @NamedQuery(name = "ComercioTipoComercio.findByFechaCreacion", query = "SELECT c FROM ComercioTipoComercio c WHERE c.fechaCreacion = :fechaCreacion")})
+    @NamedQuery(name = "ComercioTipoComercio.findByFechaCreacion", query = "SELECT c FROM ComercioTipoComercio c WHERE c.fechaCreacion = :fechaCreacion"), 
+    @NamedQuery(name = "ComercioTipoComercio.countByIdPersona", query = "SELECT count(d.comercioTipoComercioPK) FROM ComercioTipoComercio d WHERE d.comercioTipoComercioPK.idComercio = :idComercio")})
 public class ComercioTipoComercio implements Serializable {
 
     private static final long serialVersionUID = 1L;

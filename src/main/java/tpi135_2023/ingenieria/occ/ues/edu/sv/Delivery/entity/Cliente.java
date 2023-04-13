@@ -6,24 +6,27 @@ package tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.entity;
 
 import java.io.Serializable;
 import java.math.BigInteger;
-import java.util.Collection;
 import java.util.Date;
-import jakarta.persistence.Basic;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.NamedQueries;
-import jakarta.persistence.NamedQuery;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
+import java.util.List;
+
+import jakarta.persistence.*;
+
+//import jakarta.persistence.Column;
+//import jakarta.persistence.Entity;
+//import jakarta.persistence.GeneratedValue;
+//import jakarta.persistence.GenerationType;
+//import jakarta.persistence.Basic;
+//import jakarta.persistence.Id;
+//import jakarta.persistence.NamedQueries;
+//import jakarta.persistence.NamedQuery;
+//import jakarta.persistence.OneToMany;
+//import jakarta.persistence.Table;
+//import jakarta.persistence.Temporal;
+//import jakarta.persistence.TemporalType;
 
 /**
  *
- * @author Usuario
+ * @author figueroa
  */
 @Entity
 @Table(name = "cliente")
@@ -52,7 +55,7 @@ public class Cliente implements Serializable {
     @Temporal(TemporalType.DATE)
     private Date fechaNacimiento;
     @OneToMany(mappedBy = "idCliente")
-    private Collection<Orden> ordenCollection;
+    private List<Orden> ordenList;
 
     public Cliente() {
     }
@@ -101,12 +104,12 @@ public class Cliente implements Serializable {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    public Collection<Orden> getOrdenCollection() {
-        return ordenCollection;
+    public List<Orden> getOrdenList() {
+        return ordenList;
     }
 
-    public void setOrdenCollection(Collection<Orden> ordenCollection) {
-        this.ordenCollection = ordenCollection;
+    public void setOrdenList(List<Orden> ordenList) {
+        this.ordenList = ordenList;
     }
 
     @Override

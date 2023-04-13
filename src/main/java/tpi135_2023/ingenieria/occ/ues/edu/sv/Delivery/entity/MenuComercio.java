@@ -6,25 +6,11 @@ package tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.entity;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.Collection;
-import jakarta.persistence.Basic;
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinColumns;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.NamedQueries;
-import jakarta.persistence.NamedQuery;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
-
+import java.util.List;
+import jakarta.persistence.*;
 /**
  *
- * @author Usuario
+ * @author figueroa
  */
 @Entity
 @Table(name = "menu_comercio")
@@ -50,7 +36,7 @@ public class MenuComercio implements Serializable {
     @Column(name = "precio_base")
     private BigDecimal precioBase;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "menuComercio")
-    private Collection<OrdenDetalle> ordenDetalleCollection;
+    private List<OrdenDetalle> ordenDetalleList;
     @JoinColumns({
         @JoinColumn(name = "id_comercio", referencedColumnName = "id_comercio"),
         @JoinColumn(name = "id_producto", referencedColumnName = "id_producto")})
@@ -96,12 +82,12 @@ public class MenuComercio implements Serializable {
         this.precioBase = precioBase;
     }
 
-    public Collection<OrdenDetalle> getOrdenDetalleCollection() {
-        return ordenDetalleCollection;
+    public List<OrdenDetalle> getOrdenDetalleList() {
+        return ordenDetalleList;
     }
 
-    public void setOrdenDetalleCollection(Collection<OrdenDetalle> ordenDetalleCollection) {
-        this.ordenDetalleCollection = ordenDetalleCollection;
+    public void setOrdenDetalleList(List<OrdenDetalle> ordenDetalleList) {
+        this.ordenDetalleList = ordenDetalleList;
     }
 
     public ProductoComercio getProductoComercio() {
