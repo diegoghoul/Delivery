@@ -267,7 +267,7 @@ public class ComercioIT {
      * @see Direccion
      * @see Sucursal
      */
-/*    @Order(7)
+    @Order(7)
     @Test
     public void crearSucursalTest() {
         System.out.println("Comercio - crearSucursal");
@@ -333,6 +333,6 @@ public class ComercioIT {
                 .request(MediaType.APPLICATION_JSON)
                 .post(Entity.entity(s, MediaType.APPLICATION_JSON));
         Assertions.assertEquals(400, respuestaSucursal.getStatus());
-    }*/
+    }
 
 }

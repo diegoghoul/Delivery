@@ -1,3 +1,4 @@
+C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\control\TerritorioBean.java
 C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\entity\TipoComercio.java
 C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\entity\Pago.java
 C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\boundary\ApplicationConfig.java
@@ -7,6 +8,7 @@ C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\t
 C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\entity\Cliente.java
 C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\entity\ProductoComercio.java
 C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\control\TipoComercioBean.java
+C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\control\DireccionRest.java
 C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\entity\Orden.java
 C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\entity\Comercio.java
 C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\entity\TipoProductoTipoComercioPK.java
@@ -19,9 +21,11 @@ C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\t
 C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\entity\OrdenDetalle.java
 C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\entity\Sucursal.java
 C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\entity\Factura.java
+C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\control\TerritorioRest.java
 C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\entity\ComercioTipoComercioPK.java
 C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\entity\MenuComercio.java
 C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\control\TipoComercioRest.java
+C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\control\DireccionBean.java
 C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\entity\Producto.java
 C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\entity\Entrega.java
 C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\src\main\java\tpi135_2023\ingenieria\occ\ues\edu\sv\Delivery\entity\TipoProducto.java
