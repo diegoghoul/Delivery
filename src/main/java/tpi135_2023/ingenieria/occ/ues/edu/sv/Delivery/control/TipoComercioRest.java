@@ -20,10 +20,7 @@ import java.util.logging.Logger;
 
 import tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.entity.TipoComercio;
 
-/**
- *
- * @author CENTRA
- */
+
 @Path("tipocomercio")
 @RequestScoped
 @Produces({MediaType.APPLICATION_JSON})

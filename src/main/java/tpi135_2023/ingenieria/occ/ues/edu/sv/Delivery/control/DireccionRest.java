@@ -18,10 +18,7 @@ import java.util.logging.Logger;
 import tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.control.RestResourcePattern;
 import tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.entity.Direccion;
 
-/**
- *
- * @author eduaf
- */
+
 @Path("direccion")
 @RequestScoped
 @Consumes(MediaType.APPLICATION_JSON)

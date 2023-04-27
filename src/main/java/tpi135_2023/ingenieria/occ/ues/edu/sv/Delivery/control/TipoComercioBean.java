@@ -10,10 +10,7 @@ import jakarta.persistence.PersistenceContext;
 import java.util.List;
 import tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.entity.TipoComercio;
 
-/**
- *
- * @author CENTRA
- */
+
 @Stateless
 public class TipoComercioBean {
 

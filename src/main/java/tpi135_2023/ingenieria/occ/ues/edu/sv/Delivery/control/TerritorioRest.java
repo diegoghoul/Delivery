@@ -21,10 +21,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.entity.Territorio;
 
-/**
- *
- * @author CENTRA
- */
+
 @Path("territorio")
 @RequestScoped
 @Produces(MediaType.APPLICATION_JSON)

@@ -2,10 +2,6 @@ package tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.control;
 
 import java.io.Serializable;
 
-/**
- *
- * @author figueroa
- */
 
 public class RestResourcePattern implements Serializable {
 
