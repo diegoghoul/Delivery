@@ -25,12 +25,6 @@
         <class>tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.entity.TipoProductoTipoComercio</class>
         <class>tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.entity.Vehiculo</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
-        <properties>
-            <property name="jakarta.persistence.schema-generation.database.action" value="none"/>
-            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/delivery"/>
-            <property name="javax.persistence.jdbc.user" value="postgres"/>
-            <property name="javax.persistence.jdbc.password" value="12345"/>
-        </properties>
+       
     </persistence-unit>
 </persistence>

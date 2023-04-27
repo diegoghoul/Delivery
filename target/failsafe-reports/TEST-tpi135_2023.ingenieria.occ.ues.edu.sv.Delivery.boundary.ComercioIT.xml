@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report-3.0.xsd" version="3.0" name="tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.boundary.ComercioIT" time="75.989" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report-3.0.xsd" version="3.0" name="tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.boundary.ComercioIT" time="49.236" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="SV"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\Usuario\AppData\Local\Temp\surefire7855524830064206244\surefirebooter-20230424230529835_3.jar C:\Users\Usuario\AppData\Local\Temp\surefire7855524830064206244 2023-04-24T23-05-29_545-jvmRun1 surefire-20230424230529835_1tmp surefire_0-20230424230529835_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Usuario\AppData\Local\Temp\surefire14198901547219779824\surefirebooter-20230426224340098_3.jar C:\Users\Usuario\AppData\Local\Temp\surefire14198901547219779824 2023-04-26T22-43-39_829-jvmRun1 surefire-20230426224340098_1tmp surefire_0-20230426224340098_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\target\test-classes;C:\Users\Usuario\Documents\NetBeansProjects\TPI135_2023\Delivery\target\classes;C:\Users\Usuario\.m2\repository\jakarta\platform\jakarta.jakartaee-api\10.0.0\jakarta.jakartaee-api-10.0.0.jar;C:\Users\Usuario\.m2\repository\jakarta\platform\jakarta.jakartaee-web-api\10.0.0\jakarta.jakartaee-web-api-10.0.0.jar;C:\Users\Usuario\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.0.0\jakarta.servlet-api-6.0.0.jar;C:\Users\Usuario\.m2\repository\jakarta\servlet\jsp\jakarta.servlet.jsp-api\3.1.0\jakarta.servlet.jsp-api-3.1.0.jar;C:\Users\Usuario\.m2\repository\jakarta\el\jakarta.el-api\5.0.1\jakarta.el-api-5.0.1.jar;C:\Users\Usuario\.m2\repository\jakarta\servlet\jsp\jstl\jakarta.servlet.jsp.jstl-api\3.0.0\jakarta.servlet.jsp.jstl-api-3.0.0.jar;C:\Users\Usuario\.m2\repository\jakarta\faces\jakarta.faces-api\4.0.1\jakarta.faces-api-4.0.1.jar;C:\Users\Usuario\.m2\repository\jakarta\websocket\jakarta.websocket-api\2.1.0\jakarta.websocket-api-2.1.0.jar;C:\Users\Usuario\.m2\repository\jakarta\websocket\jakarta.websocket-client-api\2.1.0\jakarta.websocket-client-api-2.1.0.jar;C:\Users\Usuario\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Usuario\.m2\repository\jakarta\ejb\jakarta.ejb-api\4.0.1\jakarta.ejb-api-4.0.1.jar;C:\Users\Usuario\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Usuario\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Usuario\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\Usuario\.m2\repository\jakarta\interceptor\jakarta.interceptor-api\2.1.0\jakarta.interceptor-api-2.1.0.jar;C:\Users\Usuario\.m2\repository\jakarta\enterprise\jakarta.enterprise.cdi-api\4.0.1\jakarta.enterprise.cdi-api-4.0.1.jar;C:\Users\Usuario\.m2\repository\jakarta\enterprise\jakarta.enterprise.lang-model\4.0.1\jakarta.enterprise.lang-model-4.0.1.jar;C:\Users\Usuario\.m2\repository\jakarta\authentication\jakarta.authentication-api\3.0.0\jakarta.authentication-api-3.0.0.jar;C:\Users\Usuario\.m2\repository\jakarta\security\enterprise\jakarta.security.enterprise-api\3.0.0\jakarta.security.enterprise-api-3.0.0.jar;C:\Users\Usuario\.m2\repository\jakarta\jms\jakarta.jms-api\3.1.0\jakarta.jms-api-3.1.0.jar;C:\Users\Usuario\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\Usuario\.m2\repository\jakarta\mail\jakarta.mail-api\2.1.0\jakarta.mail-api-2.1.0.jar;C:\Users\Usuario\.m2\repository\jakarta\resource\jakarta.resource-api\2.1.0\jakarta.resource-api-2.1.0.jar;C:\Users\Usuario\.m2\repository\jakarta\authorization\jakarta.authorization-api\2.1.0\jakarta.authorization-api-2.1.0.jar;C:\Users\Usuario\.m2\repository\jakarta\batch\jakarta.batch-api\2.1.1\jakarta.batch-api-2.1.1.jar;C:\Users\Usuario\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.core\4.0.0\org.eclipse.persistence.core-4.0.0.jar;C:\Users\Usuario\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.asm\9.4.0\org.eclipse.persistence.asm-9.4.0.jar;C:\Users\Usuario\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.antlr\2.7.10\org.eclipse.persistence.antlr-2.7.10.jar;C:\Users\Usuario\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.jpa\2.7.10\org.eclipse.persistence.jpa-2.7.10.jar;C:\Users\Usuario\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.jpa.jpql\2.7.10\org.eclipse.persistence.jpa.jpql-2.7.10.jar;C:\Users\Usuario\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.moxy\4.0.0\org.eclipse.persistence.moxy-4.0.0.jar;C:\Users\Usuario\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\Usuario\.m2\repository\org\eclipse\angus\angus-activation\1.0.0\angus-activation-1.0.0.jar;C:\Users\Usuario\.m2\repository\org\eclipse\angus\angus-mail\1.0.0\angus-mail-1.0.0.jar;C:\Users\Usuario\.m2\repository\org\eclipse\persistence\jakarta.persistence\2.2.3\jakarta.persistence-2.2.3.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jersey\core\jersey-client\3.1.1\jersey-client-3.1.1.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jersey\core\jersey-common\3.1.1\jersey-common-3.1.1.jar;C:\Users\Usuario\.m2\repository\org\glassfish\hk2\osgi-resource-locator\1.0.3\osgi-resource-locator-1.0.3.jar;C:\Users\Usuario\.m2\repository\org\eclipse\yasson\3.0.2\yasson-3.0.2.jar;C:\Users\Usuario\.m2\repository\jakarta\json\bind\jakarta.json.bind-api\3.0.0\jakarta.json.bind-api-3.0.0.jar;C:\Users\Usuario\.m2\repository\org\testcontainers\testcontainers\1.17.6\testcontainers-1.17.6.jar;C:\Users\Usuario\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Usuario\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Usuario\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Usuario\.m2\repository\org\apache\commons\commons-compress\1.22\commons-compress-1.22.jar;C:\Users\Usuario\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\Usuario\.m2\repository\org\jetbrains\annotations\17.0.0\annotations-17.0.0.jar;C:\Users\Usuario\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\Usuario\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.2.13\docker-java-transport-zerodep-3.2.13.jar;C:\Users\Usuario\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\Usuario\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\Usuario\.m2\repository\org\testcontainers\junit-jupiter\1.17.6\junit-jupiter-1.17.6.jar;C:\Users\Usuario\.m2\repository\org\testcontainers\postgresql\1.17.6\postgresql-1.17.6.jar;C:\Users\Usuario\.m2\repository\org\testcontainers\jdbc\1.17.6\jdbc-1.17.6.jar;C:\Users\Usuario\.m2\repository\org\testcontainers\database-commons\1.17.6\database-commons-1.17.6.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\Usuario\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\Usuario\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Usuario\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\Usuario\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\Usuario\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jersey\inject\jersey-hk2\3.1.1\jersey-hk2-3.1.1.jar;C:\Users\Usuario\.m2\repository\org\glassfish\hk2\hk2-locator\3.0.3\hk2-locator-3.0.3.jar;C:\Users\Usuario\.m2\repository\org\glassfish\hk2\external\aopalliance-repackaged\3.0.3\aopalliance-repackaged-3.0.3.jar;C:\Users\Usuario\.m2\repository\org\glassfish\hk2\hk2-api\3.0.3\hk2-api-3.0.3.jar;C:\Users\Usuario\.m2\repository\org\glassfish\hk2\hk2-utils\3.0.3\hk2-utils-3.0.3.jar;C:\Users\Usuario\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\Usuario\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\3.1.0\jakarta.ws.rs-api-3.1.0.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jersey\media\jersey-media-json-binding\3.1.1\jersey-media-json-binding-3.1.1.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jersey\media\jersey-media-moxy\3.1.1\jersey-media-moxy-3.1.1.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jersey\ext\jersey-entity-filtering\3.1.1\jersey-entity-filtering-3.1.1.jar;C:\Users\Usuario\.m2\repository\jakarta\json\jakarta.json-api\2.1.1\jakarta.json-api-2.1.1.jar;C:\Users\Usuario\.m2\repository\org\eclipse\parsson\parsson\1.1.1\parsson-1.1.1.jar;C:\Users\Usuario\.m2\repository\org\slf4j\slf4j-simple\1.7.30\slf4j-simple-1.7.30.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Usuario\AppData\Local\Temp\surefire7855524830064206244\surefirebooter-20230424230529835_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Usuario\AppData\Local\Temp\surefire14198901547219779824\surefirebooter-20230426224340098_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.6+9-LTS-190"/>
@@ -56,7 +56,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="crearTest" classname="tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.boundary.ComercioIT" time="3.385">
+  <testcase name="crearTest" classname="tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.boundary.ComercioIT" time="6.823">
     <system-out><![CDATA[Comercio - lanzarPayara
 Comercio - crear
 ]]></system-out>
@@ -71,42 +71,42 @@ Comercio - crear
   Total Memory: 3876 MB
 [testcontainers-lifecycle-0] INFO docker[testcontainers/ryuk:0.3.4] - Creating container for image: testcontainers/ryuk:0.3.4
 [testcontainers-lifecycle-0] INFO org.testcontainers.utility.RegistryAuthLocator - Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
-[testcontainers-lifecycle-0] INFO docker[testcontainers/ryuk:0.3.4] - Container testcontainers/ryuk:0.3.4 is starting: ea74bcca9e9c8147172cbb094270e6d10162e58f7fa554f8feb4c515f58de610
-[testcontainers-lifecycle-0] INFO docker[testcontainers/ryuk:0.3.4] - Container testcontainers/ryuk:0.3.4 started in PT3.3333288S
+[testcontainers-lifecycle-0] INFO docker[testcontainers/ryuk:0.3.4] - Container testcontainers/ryuk:0.3.4 is starting: 29bd81b52ca4a3613a9648c1b30fecb6acbdd2ed4d9c8330e9757f0c01072544
+[testcontainers-lifecycle-0] INFO docker[testcontainers/ryuk:0.3.4] - Container testcontainers/ryuk:0.3.4 started in PT2.2174197S
 [testcontainers-lifecycle-0] INFO org.testcontainers.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
 [testcontainers-lifecycle-0] INFO org.testcontainers.DockerClientFactory - Checking the system...
 [testcontainers-lifecycle-0] INFO org.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
 [testcontainers-lifecycle-0] INFO docker[postgres:13] - Creating container for image: postgres:13
-[testcontainers-lifecycle-0] INFO docker[postgres:13] - Container postgres:13 is starting: c120d70e1cfa3dfb86e26dd3b09918c863c4f87b51436473e1c501783d378240
-[testcontainers-lifecycle-0] INFO docker[postgres:13] - Container postgres:13 started in PT7.4487455S
+[testcontainers-lifecycle-0] INFO docker[postgres:13] - Container postgres:13 is starting: 00cae972a7cef078f108b4f1fb02fdcdf5c2b44aba5581543e369c38a4028012
+[testcontainers-lifecycle-0] INFO docker[postgres:13] - Container postgres:13 started in PT3.4543101S
 [testcontainers-lifecycle-0] INFO org.testcontainers.ext.ScriptUtils - Executing database script from DeliveryDDL.sql
-[testcontainers-lifecycle-0] INFO org.testcontainers.ext.ScriptUtils - Executed database script from DeliveryDDL.sql in 928 ms.
+[testcontainers-lifecycle-0] INFO org.testcontainers.ext.ScriptUtils - Executed database script from DeliveryDDL.sql in 833 ms.
 [main] INFO docker[payara-cp:latest] - Creating container for image: payara-cp:latest
-[main] INFO docker[payara-cp:latest] - Container payara-cp:latest is starting: b65dfc6fe784ce0790cfa9ce34a35f1dca4eeb28e98c35aa349573d2d965c6d3
-[main] INFO docker[payara-cp:latest] - Container payara-cp:latest started in PT55.7892177S
+[main] INFO docker[payara-cp:latest] - Container payara-cp:latest is starting: 63f4ed133f81cd8ec1f5c362e61c592898be3d5d2e7d25768cdcc8c8808613f8
+[main] INFO docker[payara-cp:latest] - Container payara-cp:latest started in PT30.8609924S
 ]]></system-err>
   </testcase>
-  <testcase name="findByIdTest" classname="tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.boundary.ComercioIT" time="0.285">
+  <testcase name="findByIdTest" classname="tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.boundary.ComercioIT" time="0.565">
     <system-out><![CDATA[Comercio - findById
 ]]></system-out>
   </testcase>
-  <testcase name="crearTipoComercioTest" classname="tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.boundary.ComercioIT" time="0.14">
+  <testcase name="crearTipoComercioTest" classname="tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.boundary.ComercioIT" time="0.141">
     <system-out><![CDATA[Comercio - crearTipoComercio
 ]]></system-out>
   </testcase>
-  <testcase name="validarTipoVacioTest" classname="tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.boundary.ComercioIT" time="0.087">
+  <testcase name="validarTipoVacioTest" classname="tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.boundary.ComercioIT" time="0.122">
     <system-out><![CDATA[Comercio - validarTipoVacio
 ]]></system-out>
   </testcase>
-  <testcase name="agregarTipoAComercio" classname="tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.boundary.ComercioIT" time="0.104">
+  <testcase name="agregarTipoAComercio" classname="tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.boundary.ComercioIT" time="0.1">
     <system-out><![CDATA[Comercio - agregarTipoAComercio
 ]]></system-out>
   </testcase>
-  <testcase name="validarTipoLlenoTest" classname="tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.boundary.ComercioIT" time="0.081">
+  <testcase name="validarTipoLlenoTest" classname="tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.boundary.ComercioIT" time="0.05">
     <system-out><![CDATA[Comercio - validarTipoLleno
 ]]></system-out>
   </testcase>
-  <testcase name="crearSucursalTest" classname="tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.boundary.ComercioIT" time="0.457">
+  <testcase name="crearSucursalTest" classname="tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.boundary.ComercioIT" time="0.288">
     <system-out><![CDATA[Comercio - crearSucursal
 ]]></system-out>
   </testcase>

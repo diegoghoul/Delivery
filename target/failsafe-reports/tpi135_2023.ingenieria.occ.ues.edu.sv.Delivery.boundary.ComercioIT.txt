@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.boundary.ComercioIT
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 75.989 s - in tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.boundary.ComercioIT
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.236 s - in tpi135_2023.ingenieria.occ.ues.edu.sv.Delivery.boundary.ComercioIT
